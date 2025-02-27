@@ -7,7 +7,7 @@ export default function Navbar() {
   const active = location.pathname === "/" ? "home" : location.pathname.substring(1);
 
   return (
-    <div className="flex justify-between items-center bg-[#000529] px-6 py-3 font-montserrat">
+    <div className="fixed top-0 left-0 w-full z-20 flex justify-between items-center bg-[#000529] px-6 py-3 font-montserrat">
       {/* Left Side: Logo and Text */}
       <div className="flex items-center text-white text-2xl ml-18 pl-20 font-regular">
         <img src={logo} alt="Logo" className="h-10 w-10 mr-2" />
@@ -27,7 +27,7 @@ export default function Navbar() {
             {name === "home"
               ? "Home"
               : name === "services"
-              ? "Our Services"
+              ? "Services"
               : name === "about"
               ? "About"
               : "Contact Us"}

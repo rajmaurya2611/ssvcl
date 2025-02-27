@@ -1,6 +1,12 @@
+import About from "../components/About/about";
 
-const About = () => {
-    return <div>Contact Us</div>;
+
+const AboutPage = () => {
+    return (
+        <>
+            <About/>
+        </>
+      )
   };
-  export default About;
+  export default AboutPage;
   

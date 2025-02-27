@@ -1,6 +1,11 @@
+import OurServices from "../components/OurServices/services";
 
 const Services = () => {
-    return <div>Contact Us</div>;
+    return (
+        <>
+            <OurServices/>
+        </>
+      )
   };
   export default Services;
   
